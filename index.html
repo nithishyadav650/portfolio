@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nithish — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Nithish. Built with HTML, CSS and JS." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Nithish</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+      <nav class="site-nav" id="siteNav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a class="btn" id="resumeLink" href="resume.pdf" download>Resume</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <div>
+            <h1>Hello — I'm Nithish</h1>
+            <p class="lead">Front-end engineer focusing on accessible, performant, and polished web experiences. I build UI and small web apps using plain HTML, CSS and JavaScript.</p>
+            <p class="cta">
+              <a class="btn primary" href="#projects">See Projects</a>
+              <a class="btn" href="#contact">Let's talk</a>
+            </p>
+            <p class="meta">Location: Bengaluru • Open to work</p>
+          </div>
+          <div class="avatar-wrap">
+            <!-- Simple SVG avatar placeholder -->
+            <svg class="avatar" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1">
+                  <stop offset="0" stop-color="#4f46e5"/>
+                  <stop offset="1" stop-color="#06b6d4"/>
+                </linearGradient>
+              </defs>
+              <rect rx="20" width="100%" height="100%" fill="#f3f4f6"/>
+              <circle cx="100" cy="70" r="36" fill="url(#g)"/>
+              <rect x="40" y="120" width="120" height="40" rx="8" fill="#eef2ff"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container about" id="about">
+      <h2>About</h2>
+      <p>I build accessible front-end experiences using semantic HTML, modern CSS and vanilla JavaScript. I enjoy crafting clean component-based UIs and optimizing for performance and accessibility.</p>
+      <ul>
+        <li>B.E. / Computer Science</li>
+        <li>Worked with teams at enterprise and startup scale</li>
+        <li>Interested in UI, web performance, and design systems</li>
+      </ul>
+    </section>
+
+    <section class="container skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Accessibility</span>
+        <span class="skill">Responsive Design</span>
+        <span class="skill">Performance</span>
+      </div>
+    </section>
+
+    <section class="container projects" id="projects">
+      <h2>Projects</h2>
+      <p class="muted">A few projects — click to view (links are placeholders).</p>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="thumb"></div>
+          <h3>Project One</h3>
+          <p class="muted">A single-page app demonstrating performance and animations.</p>
+          <p class="project-actions"><a class="btn" href="#">Live</a> <a class="btn" href="#">Source</a></p>
+        </article>
+
+        <article class="project-card">
+          <div class="thumb"></div>
+          <h3>Design System</h3>
+          <p class="muted">A lightweight component library in pure CSS and HTML primitives.</p>
+          <p class="project-actions"><a class="btn" href="#">Demo</a> <a class="btn" href="#">Source</a></p>
+        </article>
+
+        <article class="project-card">
+          <div class="thumb"></div>
+          <h3>Interactive Widget</h3>
+          <p class="muted">Small embeddable widget built with zero dependencies.</p>
+          <p class="project-actions"><a class="btn" href="#">Try</a> <a class="btn" href="#">Source</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container contact" id="contact">
+      <h2>Contact</h2>
+      <p>If you'd like to reach me, copy my email or use the mail link.</p>
+      <div class="contact-actions">
+        <button class="btn" id="copyEmail">Copy email</button>
+        <a class="btn" href="mailto:youremail@example.com">Email me</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Built with ❤️ using HTML, CSS and JS. Replace the content with your own. Resume: <a href="resume.pdf">download</a> and please put your `resume.pdf` in the project root.</p>
+      <p class="small">© <span id="year"></span> Nithish</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
